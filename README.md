@@ -170,6 +170,12 @@ Be sure that the bolts are tight.
 
 I also used one of the acrylic parts to hold the LCD as stated before, but is not necessary as the screen will be attached to the enclosure in the future.
 
+The wires were wrapped around with spiral wire wrap tube.
+
+## Done
+
+<img src="/images/done.png" width="500">
+
 # Further work
 
 this
