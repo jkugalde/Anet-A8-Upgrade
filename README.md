@@ -156,7 +156,9 @@ Be sure that the bolts are tight.
 
 - Attach the SK8 to the shafts and frame.
 
-- Attach the z enndstop suppor (loosely).
+- Attach the z endstop support (loosely).
+
+To align the x axis, you can move the gantry all the way up in the z axis and compare the amount of ACME thread coming up from the nut and adjust.
 
 ## Electronics
 
@@ -166,13 +168,15 @@ Be sure that the bolts are tight.
 
 - Attach them to the frame.
 
-- Connect everything.
+- Connect everything as it was.
 
 I also used one of the acrylic parts to hold the LCD as stated before, but is not necessary as the screen will be attached to the enclosure in the future.
 
 The wires were wrapped around with spiral wire wrap tube.
 
 ## Done
+
+Remember to level the bed. In my printer i also have a glass bed from an Ender3.
 
 <img src="/images/done.png" width="500">
 
