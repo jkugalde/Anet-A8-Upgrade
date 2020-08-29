@@ -6,7 +6,7 @@ This is a work in progress and i currently have only modified the frame, from ac
 
 This is what i currently have:
 
-<img src="/images/design.png" width="500">
+<img src="/images/design.png" width="750">
 
 # Design
 
@@ -28,7 +28,7 @@ I decided to use 30x30 T-Slots as they are cheaper and stronger than 20x20 V-Slo
 
 As the beams are sold in multiples of 250 mm and the Anet axis are longer than that i chose to use 500 mm profiles in the following design:
 
-<img src="/images/frame.png" width="500">
+<img src="/images/frame.png" width="750">
 
 There is some space in the bottom to separate the electronics and power from the rest of the machine, wich will be in an enclosure in the future. The joints are corner brackets, you can add more or other type of joints to increase stiffness, i used the minimum as the enclosure will also help. The z axis rods are held by SK vertical supports. Unfortunately, there are four of the beams that must be cut to a different length, one of them is to hold the spool, other one for the screen, and the other two will support the z motors and define the length of the y axis. 
 
@@ -46,11 +46,13 @@ T-SLot 30x30x120 mm | 2
 SK8 shaft support seat | 2
 Corner bracket | 22
 Rubber foots | 4
-Printed attachment | 5
+End Cap foot attachment | 5
 
 NOTE1: The extra printed attachment is to cover the sharp corners of the aluminium profile that hols the screen.
+
 NOTE2: The small beams could be smaller, like 3 cm smaller.
-NOTE3: That extra beam for the LCD is temporal, ai it will be held by the enclosure in the future.
+
+NOTE3: That extra beam for the LCD is temporal, as it will be held by the enclosure in the future.
 
 ## 3D Printed parts
 
@@ -77,6 +79,8 @@ Power inlet mount | 1
 
 The x belt attachments were made as the previous system (bolts and zip ties) is awful, these are not too fancy either, but will stand long enough until i change the extruder for something else.
 
+<img src="/images/xbelt.png" width="500">
+
 The y belt attachments were made as the height of the belt with respect to the y carriage changed. 
 
 The other parts of the spool holder are on my [Thingiverse](https://www.thingiverse.com/thing:3457712), aswell as in this repository, except for the piece that joint the spool holder with the frame.
@@ -85,15 +89,17 @@ The other parts of the spool holder are on my [Thingiverse](https://www.thingive
 
 To hold the electronics the idea is to add a sheet of acrylic with mounting holes in the bottom face of the frame, but that will be done with the rest of the enclosure, so for now i will use the original parts of the anet where the electronics is mounted on, which attach really fine to the T-Slots and make everything easier, except for the inaccesibility of the SD port... well, is not difficult to make new holes to put the board closer to the edge or just USB print meanwhile.
 
+I also reused one of the acrylic panels to hold the LCD.
+
 <img src="/images/electronics.png" width="500">
 
 # Manufacturing
 
 ## Disassembly
 
-All the acrylyc frame was dispossed with the exception of the side panels which have holes to mount the motherboard or the power source, and will serve this purpose once again until i get the enclosure done. I also used the acrylic part that hold the LCD, but is not necessary.
+All the acrylyc frame was dispossed with the exception of the panels mentioned before.
 
-All the other important parts were used, but the bearings that tightens the y belt were replaced with a proper GT2-16 idle pulley.
+All the other important parts were used, but the bearings that tightens the y belt were replaced with a proper GT2-16 idle pulley, which is also a good idea for the x belt, but there is not enough room.
 
 ## Cutting the profiles
 
@@ -103,9 +109,7 @@ I cut the 1.5 m profile with saw and then rectified the faces using a Tormach. T
 
 All the part were printed with 0.3 mm layer height, 3 shells and 30% infill, no support nor raft, with exception of the z motor holders. These are the orientations:
 
-images
-
-Drill bits with the right dimensions were passed through all the holes in the pieces. 
+Drill bits with the right dimensions were passed through all the holes in the pieces once they were printed, to clean.
 
 ## Extending wires
 
@@ -115,7 +119,9 @@ Some of the wires had to be extended due to the new position of the controller, 
 - Extruder motor, fans, thermistor, heat cartridge
 - Z endstop.
 
-I had a power socket previously installed in the printer, with fuse and switch. I will probably change it in the future to put the switch in the front of the machine but the connector in the back.
+I had a power socket previously installed in the printer with a rocker switch, if you want to do this you will have to wire it like this:
+
+(image)
 
 # Assembly
 
@@ -183,11 +189,9 @@ To align the x axis, you can move the gantry all the way up in the z axis and co
 
 - Connect everything as it was.
 
-I also used one of the acrylic parts to hold the LCD as stated before, but is not necessary as the screen will be attached to the enclosure in the future.
-
 The wires were wrapped around with spiral wire wrap tube.
 
-## Done
+## Done(?)
 
 Remember to level the bed. In my printer i also have a glass bed from an Ender3.
 
@@ -195,5 +199,8 @@ Remember to level the bed. In my printer i also have a glass bed from an Ender3.
 
 # Further work
 
-this
+- Change the controller
+- Build the enclosure
+- Change the mechanical principle
 
+With the current setting the usable printing area will 250x210 mm (X x Y) so it is a good idea to get a borosilicate glass bed to attach (remember to use only three bolts in the bed). There is a loss of Y space as i put the glass bed with metal clips, also because of the design, with other configuration you could get an extra 5-6 centimeters without the bed crashing into the enclosure.
